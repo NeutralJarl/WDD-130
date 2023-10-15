@@ -1,4 +1,24 @@
+/* Font import */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Tilt+Prism&display=swap');
+
+/* Styles for .home-title and .msg h2 */
+.home-title {
+    font-family: 'Tilt Prism', Helvetica, sans-serif;
+    font-size: 2em; /* Make .home-title twice as big as the default */
+    margin-top: 10px; /* Add margin-top to .home-title */
+}
+
+/* Set default font size for the whole page */
+body {
+    font-family: 'Oswald', Helvetica, sans-serif;
+    font-size: 22px; /* Default font size for the whole page */
+}
+
+/* Set font family and size for all other elements */
+body, h1, h3, h4, h5, h6, nav a, .logo, .book, .join, .msg p, footer p {
+    font-family: 'Oswald', Helvetica, sans-serif;
+    font-size: 1em; /* Default font size for other elements */
+}
 /* Styles for header */
 header {
     background-color: #03045E;
@@ -8,10 +28,15 @@ header {
     width: 80px;
 }
 
+#logo_link {
+    padding-top: 5px; /* Add padding-top to #logo_link */
+}
+
 nav a {
     text-align: center;
     color: white;
     text-decoration: none;
+    padding: 35px; /* Add padding to nav a */
 }
 
 nav a:hover {
@@ -47,6 +72,9 @@ main section {
     background-color: #0077B6;
     color: black;
     text-decoration: none;
+    padding: 15px 30px; /* Add padding to .book and .join */
+    margin-top: 50px; /* Add margin-top to .book and .join */
+    border-radius: 5px;
 }
 
 .book:hover, .join:hover {
@@ -56,6 +84,13 @@ main section {
 
 .msg {
     background-color: #0077B6;
+    line-height: 1.5em; /* Increase line height */
+    padding: 35px; /* Add padding to .msg */
+}
+
+.msg p {
+    color: black;
+    padding-bottom: 15px; /* Add padding-bottom to .msg p */
 }
 
 .msg h2, .msg p {
@@ -66,6 +101,13 @@ main section {
 footer {
     background-color: #0077B6;
     color: black;
+    padding: 25px 50px; /* Add padding to footer */
+    margin-top: 200px; /* Add margin-top to footer */
+}
+
+
+footer .social img {
+    padding-top: 15px; /* Add padding-top to footer .social img */
 }
 
 footer p {
@@ -88,8 +130,16 @@ footer a:hover {
 /* Additional styles */
 body {
     background-color: #0077B6;
+        font-family: 'Oswald', Helvetica, sans-serif;
+        font-size: 22px; /* Default font size for the whole page */
+        margin: 0; /* Remove margin */
+        padding: 0; /* Remove paddinng */
 }
 
+h2 {
+    margin: 0;
+}
+     
 #content {
     max-width: 1600px;
     margin: 0 auto;
@@ -97,8 +147,24 @@ body {
 
 .icon {
     width: 80px;
+    padding-top: 10px; /* Add padding-top to .icon */
 }
 
 .home-title, h4 {
     color: black;
+}
+
+/* Styles for cards */
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0; /* Add margin to cards */
+}
+
+/* Border for card image */
+.card-img {
+    border: 10px solid black; /* Add border to card image */
+}
+
+/* Box-sizing for images in main section */
+main section img {
+    box-sizing: border-box;
 }
