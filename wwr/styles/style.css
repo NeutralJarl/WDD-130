@@ -1,108 +1,104 @@
-.logo{
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Tilt+Prism&display=swap');
+/* Styles for header */
+header {
+    background-color: #03045E;
+}
+
+.logo {
     width: 80px;
 }
 
-#hero-img{
-    width: 100%;
-}
-
-body{
-    background-color: #0077B6;
-}
-
-header{
-    background-color: #03045E;
-}
-content {
-    max-width: 1600px;
-    margin: 0 auto;
-}
-
-nav a{
+nav a {
     text-align: center;
     color: white;
     text-decoration: none;
 }
 
-nav a:hover{
+nav a:hover {
     background-color: #00B4D8;
     color: black;
 }
 
-#hero-msg h1{
+/* Styles for hero section */
+#hero-img {
+    width: 100%;
+}
+
+#hero-msg h1, #hero-msg h4 {
     text-align: center;
 }
 
-#hero-msg h4{
+.button-box {
     text-align: center;
 }
 
-.button-box{
+/* Styles for main content */
+main section {
     text-align: center;
 }
 
-main section{
-    text-align: center;
-}
-
-#background{
+/* Styles for different sections in main content */
+#background {
     height: 725px;
     background-color: #00B4D8;
 }
 
-.book, .join{
+.book, .join {
     background-color: #0077B6;
     color: black;
     text-decoration: none;
 }
 
-.book:hover, .join:hover{
+.book:hover, .join:hover {
     background-color: #00B4D8;
     color: black;
 }
 
-.msg{
+.msg {
     background-color: #0077B6;
 }
 
-footer{
+.msg h2, .msg p {
+    color: black;
+}
+
+/* Styles for footer */
+footer {
     background-color: #0077B6;
     color: black;
 }
 
-footer p{
+footer p {
     font-size: 1.2em;
 }
 
-footer p a:hover{
+footer p a:hover {
     text-decoration: underline;
 }
 
-footer a{
+footer a {
     color: black;
     text-decoration: none;
 }
 
-footer a:hover{
+footer a:hover {
     color: black;
 }
 
-.home-title{
-    color: black;
+/* Additional styles */
+body {
+    background-color: #0077B6;
 }
 
-h4{
-    color: black;
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
-.msg h2{
-    color: black;
-}
-
-.msg p{
-    color: black;
-}
-
-.icon{
+.icon {
     width: 80px;
+}
+
+.home-title, h4 {
+    color: black;
 }
