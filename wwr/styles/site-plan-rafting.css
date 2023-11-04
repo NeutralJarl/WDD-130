@@ -4,17 +4,14 @@ Fonts are separated by a & */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Tilt+Prism&display=swap');
 
 :root {
-  /* change the values below to your colors from your palette */
   --primary-color: #0077B6   ;
   --secondary-color: #00B4D8 ;
   --accent1-color: #03045E;
   --accent2-color: white;
 
-  /* change the values below to your chosen font(s) */
   --heading-font: "Tilt Prism";
   --paragraph-font: Oswald, Helvetica, sans-serif;
 
-  /* these colors below should be chosen from among your palette colors above */
   --headline-color-on-white: #0077B6;  /* headlines on a white background */ 
   --headline-color-on-color: white; /* headlines on a colored background */ 
   --paragraph-color-on-white: #0077B6; /* paragraph text on a white background */ 
@@ -26,8 +23,6 @@ Fonts are separated by a & */
   --nav-hover-background-color: #0077B6;
 }
 
-
-/*  Look around below...but DON'T CHANGE ANYTHING! */
 
 body {
   max-width: 960px;
