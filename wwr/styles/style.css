@@ -207,16 +207,19 @@ main section img {
   .rivers-card {
     grid-column: 2 / span 3;
     grid-row: 2 / span 1;
+    width: 100%;
   }
   
   .camping-card {
     grid-column: 5 / span 3;
     grid-row: 2 / span 1;
+    width: 100%;
   }
   
   .rapids-card {
     grid-column: 8 / span 3;
     grid-row: 2 / span 1;
+    width: 100%;
   }
   
   #background {
@@ -227,6 +230,7 @@ main section img {
   .mountains {
     grid-column: 2 / span 6;
     grid-row: 5 / span 3;
+    width: 100%;
   }
   
   .msg {
