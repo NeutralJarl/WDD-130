@@ -1,10 +1,54 @@
-#content {
-    max-width: 1600px;
-    margin: 0 auto;
-}
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Tilt+Prism&display=swap');
 
 body {
+    font-family: 'Tilt Prism', Arial, sans-serif;
+    font-size: 22px;
     background-color: white;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', Arial, sans-serif;
+}
+
+.home-title {
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+.book,
+.join {
+    font-size: 18px;
+    background-color: #03045E;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+.card-img {
+    border: 10px solid #000;
+    border-radius: 5px;
+}
+
+main section img {
+    box-sizing: border-box;
+}
+
+.rivers-card,
+.camping-card,
+.rapids-card {
+    margin: 200px 0;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    font-size: 1.2em;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 
 header {
@@ -34,32 +78,9 @@ main section {
     background-color: black;
 }
 
-.book,
-.join {
-    background-color: #03045E;
-    color: #FFFFFF;
-    text-decoration: none;
-}
-
 .book:hover,
 .join:hover {
     background-color: #00B4D8;
-}
-
-.msg {
-    background-color: #0077B6;
-    color: white;
-}
-
-.msg h2,
-.msg p {
-    color: #FFFFFF;
-}
-
-footer {
-    background-color: black;
-    color: white;
-    font-size: 1.2em;
 }
 
 footer a {
