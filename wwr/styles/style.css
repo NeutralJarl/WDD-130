@@ -261,6 +261,75 @@ nav a {
     padding: 15px;
 }
 
+/*second page of CSS*/
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #0077B6;
+    color: white;
+    padding: 20px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(7, auto); /* Define 7 rows */
+    gap: 20px;
+}
+
+main h1 {
+    font-family: 'Oswald', Arial, sans-serif; /* Use Oswald font for consistency */
+    font-size: 36px; /* Increase font size for emphasis */
+    margin-bottom: 20px; /* Add some spacing between the title and the river sections */
+    color: #333; /* Choose a suitable color for the text */
+    text-align: center; /* Center align the title */
+    grid-column: 3/5;
+
+}
+.river-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.grid {
+    grid-column: span 6; /* Span all 6 columns */
+}
+
+.river-section .image {
+    grid-column: span 2; /* Span 2 columns */
+}
+
+.river-section .text {
+    grid-column: span 4; /* Span 4 columns */
+}
+
+.river-section img {
+    width: 100%;
+    height: auto;
+}
+
+.text {
+    padding: 20px;
+}
+
+footer {
+    background-color: #6f7364;
+    color: white;
+    padding: 20px;
+}
+
 
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
