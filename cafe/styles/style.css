@@ -114,3 +114,103 @@ main p {
 .staff-button {
     color: #07C58C; /* Accent color */
 }
+
+/* CSS for Menu Page */
+
+/* Centering the Header on Menu Page */
+.menu-page header {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  flex-direction: column; /* Stack items vertically */
+  text-align: center; /* Center text within the header */
+  margin-bottom: 50px; /* Add some space below the header */
+}
+
+.menu-page header > div {
+  width: 100%; /* Set the width of the div to 100% */
+  padding: 20px; /* Add padding for spacing */
+  color: #6E71B5; /* Text color for header */
+}
+
+/* Larger Text Size for Header on Menu Page */
+.menu-page header h1 {
+  font-size: 4em; /* Adjust the font size for h1 */
+}
+
+/* Resizing and Positioning Images on Menu Page */
+.menu-page main {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  flex-direction: column; /* Stack items vertically */
+}
+
+.menu-page main .image-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Adjust the margin between text and images */
+}
+
+.menu-page main .image-container img {
+  width: 250px; /* Set width of the image */
+  height: 250px; /* Set height of the image */
+  border-radius: 50%; /* Make the image completely round */
+  position: absolute; /* Position the image within its container */
+}
+
+.menu-page main .image-left {
+  left: 0; /* Position the left image to the left */
+  margin-left: 10%; /* Adjust the margin for spacing */
+}
+
+.menu-page main .image-right {
+  right: 0; /* Position the right image to the right */
+  margin-right: 10%; /* Adjust the margin for spacing */
+  margin-top: 400px; /* Add margin-top to adjust position */
+}
+
+/* Centering Lists on Menu Page */
+.menu-page main ul {
+  text-align: center; /* Center text within the lists */
+}
+
+.menu-page main ul li {
+  list-style-type: none; /* Remove bullet points */
+  margin-bottom: 10px; /* Add spacing between list items */
+}
+
+/* Styling Headings in Main Content */
+.menu-page main h1,
+.menu-page main h2,
+.menu-page main h3,
+.menu-page main h4,
+.menu-page main h5 {
+  font-size: 2em; /* Set font size to 2em */
+  color: #6E71B5; /* Same color as the header */
+}
+
+.menu-page main .image-right {
+margin-bottom: 100px; /* Add space between h1 and h2 */
+}
+
+@media only screen and (max-width: 768px) {
+  .menu-page header h1 {
+    font-size: 2em; /* Adjust the font size for h1 for smaller screens */
+  }
+
+  .menu-page main .image-container img {
+    width: 150px; /* Adjust image width for smaller screens */
+    height: 150px; /* Adjust image height for smaller screens */
+  }
+
+  .menu-page main h1,
+  .menu-page main h2,
+  .menu-page main h3,
+  .menu-page main h4,
+  .menu-page main h5 {
+    font-size: 1.5em; /* Adjust font size for headings for smaller screens */
+  }
+}
