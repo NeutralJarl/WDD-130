@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5, h6, nav, footer, main {
   .nav-item {
     text-decoration: none;
     color: #fff; /* Text color for navigation items */
-    margin: 0 100px; /* Spacing between navigation items */
+    margin: 0 3em; /* Spacing between navigation items */
   }
   
   .logo {
@@ -42,7 +42,7 @@ footer {
   footer .nav-item {
     text-decoration: none;
     color: #fff; /* Text color for footer items */
-    margin: 0 100px; /* Spacing between footer items */
+    margin: 0 3em; /* Spacing between footer items */
   }
   
   footer .logo {
@@ -261,26 +261,83 @@ main .staff-member p {
   margin-bottom: 20px; /* Add spacing between image and text */
 }
 
-.site-main .staff-member p {
+.site-main .staff-mechatmber p {
   width: 80%; /* Make the text occupy 80% of the div */
 }
 
+/* CSS for Navigation and Footer */
+.nav-item,
+footer .nav-item {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 100px;
+    padding: 10px 20px; /* Add padding to create a button-like effect */
+    border-radius: 5px; /* Add border-radius for rounded corners */
+    transition: background-color 0.3s ease; /* Add transition for smooth effect */
+    font-size: 16px; /* Set the font size */
+}
+
+/* Hover effect */
+.nav-item:hover,
+footer .nav-item:hover {
+    background-color: #555; /* Change background color on hover */
+}
+
+/* Active/Pressed effect */
+.nav-item:active,
+footer .nav-item:active {
+    background-color: #333; /* Change background color on active/press */
+}
+
+
 
 @media only screen and (max-width: 768px) {
-  .menu-page header h1 {
-    font-size: 2em; /* Adjust the font size for h1 for smaller screens */
+  /* Adjust header text size */
+  .site-header h1.site-title {
+    font-size: 2.5em; /* Increase font size for better readability */
   }
 
+  /* Adjust image size in the menu page */
   .menu-page main .image-container img {
-    width: 150px; /* Adjust image width for smaller screens */
-    height: 150px; /* Adjust image height for smaller screens */
+    width: 100px; /* Adjust image width for smaller screens */
+    height: 100px; /* Adjust image height for smaller screens */
   }
 
+  /* Adjust font size for headings in the menu page */
   .menu-page main h1,
   .menu-page main h2,
   .menu-page main h3,
   .menu-page main h4,
   .menu-page main h5 {
-    font-size: 1.5em; /* Adjust font size for headings for smaller screens */
+    font-size: 1.2em; /* Adjust font size for better readability */
+  }
+
+  /* Adjust margin for navigation and footer items */
+  .nav-item,
+  footer .nav-item {
+    margin: 0 10px; /* Reduce margin for smaller screens */
+  }
+
+  /* Adjust size of staff member images in the main section */
+  .site-main .staff-member img {
+    max-width: 200px; /* Limit maximum width of staff images for smaller screens */
+    margin-bottom: 10px; /* Reduce margin between image and text */
+  }
+
+  /* Adjust font size and width of staff member description */
+  .site-main .staff-member p {
+    font-size: 1em; /* Adjust font size for better readability */
+    width: 90%; /* Make the text occupy 90% of the div for smaller screens */
+  }
+
+  /* Adjust navigation layout for smaller screens */
+  .navigation {
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center items horizontally */
+  }
+
+  .nav-item {
+    margin: 10px; /* Add margin for spacing between navigation items */
   }
 }
+
